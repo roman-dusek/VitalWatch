@@ -17,12 +17,18 @@ List the key features of your project. Include real-time monitoring, YOLO integr
 # Installation
 Provide step-by-step instructions on how to install and set up your project. Include any dependencies and system requirements.
 
+
 ```bash
 # Copy code
 # Example installation steps
 git clone https://github.com/yourusername/yourproject.git
 cd yourproject
 pip install -r requirements.txt
+
+# run annotator in docker-compose
+docker-compose up -d --build
+
+# after success instalation open http://0.0.0.0:8080/user/login/
 ```
 
 # Usage

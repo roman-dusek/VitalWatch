@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  annotator:
+    image: heartexlabs/label-studio:latest
+    container_name: annotator
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./annotator-data:/label-studio/data
+      - ./images:/label-studio/images
+    environment:
+      - LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
+      - LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/label-studio/images
