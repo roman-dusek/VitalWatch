@@ -13,5 +13,8 @@ start_labelstudio:
 	# https://hub.docker.com/r/heartexlabs/label-studio
 	docker-compose up -d --build
 
+kill_labelstudio:
+	docker-compose down
+
 make train_yolo:
 	python train_yolo.py

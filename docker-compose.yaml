@@ -8,7 +8,7 @@ services:
       - "8080:8080"
     volumes:
       - ./labelstudio-data:/label-studio/data
-      - ./images:/label-studio/images
+      - ./myfiles:/label-studio/myfiles
     environment:
       - LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
-      - LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/label-studio/images
+      - LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/label-studio/myfiles

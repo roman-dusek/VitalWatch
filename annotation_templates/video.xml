@@ -1,0 +1,10 @@
+<View>
+  <Labels name="label" toName="video">
+    <Label value="Person lying in bed" background="green"/>
+    <Label value="Person" background="blue"/>
+    <Label value="Person lying on the ground" background="yellow"/>
+    <Label value="Empty bed" background="red"/>
+  </Labels>
+   <Video name="video" value="$video" framerate="25.0"/>
+   <VideoRectangle name="box" toName="video"/>
+</View>
