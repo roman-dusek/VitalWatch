@@ -33,7 +33,7 @@ In the root folder, there's a Python notebook named `Train_YOLOv8.ipynb`, which 
 
 ## Experimental Training of YOLO v8
 For the experimental training phase, YOLO v8 was employed. The training set comprised 400 images, while the validation set included 100 images. The process and outcomes of the training are meticulously documented in the final statistics, as shown in the image.
-![yolo-training-results.png](images%2Fyolo-training-results.png).
+![yolo-training-results.png](images%2Fyolo-training-results.png)
 After extensive training, the most effective model weights were identified and are now stored in `weights/best.pt`.
 
 ## Further Development and Optimization
