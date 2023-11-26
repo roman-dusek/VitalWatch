@@ -36,10 +36,6 @@ For the experimental training phase, YOLO v8 was employed. The training set comp
 ![yolo-training-results.png](images%2Fyolo-training-results.png)
 After extensive training, the most effective model weights were identified and are now stored in `weights/best.pt`.
 
-## Further Development and Optimization
-Moving forward, our focus will shift towards further optimization of the YOLO model to enhance its accuracy and efficiency in real-world ICU scenarios. This will include tweaking the model parameters, experimenting with different training datasets, and potentially integrating additional layers or features to improve object detection under various conditions typical of intensive care environments.
-In root folder is located python notebok which name `Train_YOLOv8.ipynb` with describing yolo training process.
-
 # Installation
 
 ```bash
