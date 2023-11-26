@@ -8,6 +8,25 @@ The ICU Surveillance Event Detection System is an innovative solution designed t
 
 **Real-time Monitoring**: Utilizing YOLO for object detection, the system ensures immediate and accurate identification of events within ICU rooms.
 
+# Data Annotation Process
+
+Data annotation process, the pinnacle of our system, unfolds in three distinct phases:
+
+1. **Video Segmentation**: We initiate by extracting segments from videos, converting them into images for streamlined handling. **This strategic approach ensures that only relevant portions of videos are utilized, thereby minimizing the data processing workload.**
+
+2. Open-Vocabulary **Pre-Annotation**: In the subsequent step, we employ an open-vocabulary model for pre-annotation of images. This model, designed for large-scale object detection, **significantly accelerates the annotation process. Its expansive capabilities enhance the efficiency of annotators by providing a head start in labeling diverse objects within the images.**
+
+3. **Human-Annotator Validation**: The final phase involves human annotators reviewing and improving the pre-annotated images. **This step serves a dual purpose: validating the accuracy of pre-annotations and allowing for any necessary corrections. This iterative process ensures that the dataset is curated, with human expertise refining the model's annotations. This cycle is systematically applied to all images in the dataset.**
+
+This multi-phase approach not only streamlines the annotation workflow but also guarantees the accuracy and relevance of annotations through a collaborative effort between automated processes and human validation.
+
+![hil.png](images%2Fhil.png)
+
+# Frontend in Label Studio
+![img.png](images%2Fimg.png)
+
+# YOLO Integration
+The integration of YOLO into the ICU Surveillance Event Detection System plays a pivotal role in achieving real-time and accurate object detection within hospital intensive care units. YOLO is a state-of-the-art deep learning algorithm that excels at detecting and classifying objects in images or video frames swiftly and with high precision.
 
 # Installation
 
@@ -46,26 +65,6 @@ make start_labelstudio
 # finetuned pretrained yolo for ICU use case
 make train_yolo
 ```
-
-# Data Annotation Process
-
-Data annotation process, the pinnacle of our system, unfolds in three distinct phases:
-
-1. **Video Segmentation**: We initiate by extracting segments from videos, converting them into images for streamlined handling. **This strategic approach ensures that only relevant portions of videos are utilized, thereby minimizing the data processing workload.**
-
-2. Open-Vocabulary **Pre-Annotation**: In the subsequent step, we employ an open-vocabulary model for pre-annotation of images. This model, designed for large-scale object detection, **significantly accelerates the annotation process. Its expansive capabilities enhance the efficiency of annotators by providing a head start in labeling diverse objects within the images.**
-
-3. **Human-Annotator Validation**: The final phase involves human annotators reviewing and improving the pre-annotated images. **This step serves a dual purpose: validating the accuracy of pre-annotations and allowing for any necessary corrections. This iterative process ensures that the dataset is curated, with human expertise refining the model's annotations. This cycle is systematically applied to all images in the dataset.**
-
-This multi-phase approach not only streamlines the annotation workflow but also guarantees the accuracy and relevance of annotations through a collaborative effort between automated processes and human validation.
-
-![hil.png](images%2Fhil.png)
-
-# Frontend in Label Studio
-![img.png](images%2Fimg.png)
-
-# YOLO Integration
-The integration of YOLO into the ICU Surveillance Event Detection System plays a pivotal role in achieving real-time and accurate object detection within hospital intensive care units. YOLO is a state-of-the-art deep learning algorithm that excels at detecting and classifying objects in images or video frames swiftly and with high precision.
 
 # Reports and Notifications
 One of our vision is to provide a real-time monitoring system for ICU patients. This can be easily achieved by uring YOLO to detect the patient's movement and send notification based on some dangerous events being detected to the medical staff.
