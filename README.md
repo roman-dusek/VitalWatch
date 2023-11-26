@@ -62,7 +62,7 @@ This multi-phase approach not only streamlines the annotation workflow but also 
 ![hil.png](images%2Fhil.png)
 
 # YOLO Integration
-The integration of YOLO (You Only Look Once) into the ICU Surveillance Event Detection System plays a pivotal role in achieving real-time and accurate object detection within hospital intensive care units. YOLO is a state-of-the-art deep learning algorithm that excels at detecting and classifying objects in images or video frames swiftly and with high precision.
+The integration of YOLO into the ICU Surveillance Event Detection System plays a pivotal role in achieving real-time and accurate object detection within hospital intensive care units. YOLO is a state-of-the-art deep learning algorithm that excels at detecting and classifying objects in images or video frames swiftly and with high precision.
 
 # Reports and Notifications
 One of our vision is to provide a real-time monitoring system for ICU patients. This can be easily achieved by uring YOLO to detect the patient's movement and send notification based on some dangerous events being detected to the medical staff.
