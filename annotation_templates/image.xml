@@ -2,6 +2,7 @@
   <Image name="image" value="$image"/>
   <RectangleLabels name="label" toName="image">
     <Label value="Person lying in bed" background="green"/>
+    <Label value="Person siting on bed" background="orange"/>
     <Label value="Nurse" background="blue"/>
     <Label value="Empty bed" background="red"/>
     <Label value="Doctor" background="yellow"/>

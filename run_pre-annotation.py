@@ -29,22 +29,24 @@ else:
 
 # Set model in evaluation mode
 model = model.to(device)
-model.eval();
-
+model.eval()
 
 # Text queries to search the image for
 text_queries = ["a person lying in bed","a nurse", "an empty bed"]
 text_queries = [f"a photo of {i}" for i in text_queries]
 
+# text_queries = ["a person lying in a bed" "a person sitting on a bed", "a nurse","a woman","a men", "a doctor", "an empty bed", "a person in medical clothes", "a person from above", "a person from the back"]
+# text_queries = [f"a photo of {i}" for i in text_queries] + ["a detail of a medical device"]
+
 text_inputs = processor(text=text_queries, return_tensors="pt").to(device)
 
 batch_size = 1
 score_threshold = 0.30
-default_path = "/Users/roman.a.dusek/Downloads/hack_videos"
+default_path = "myfiles/videos"
 image_paths = glob(default_path+"/**/*.jpg")
 
 detections_dict = defaultdict(list)
-previous_detections = pd.read_csv("detections.csv")
+previous_detections = pd.read_csv("myfiles/detections.csv")
 previous_detections_unique_files = (previous_detections["video_name"]+"/"+previous_detections["file_name"]).unique()
 
 
