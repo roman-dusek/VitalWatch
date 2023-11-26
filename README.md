@@ -9,11 +9,7 @@ Human-in-the-Loop System: The integration of a human-in-the-loop system enhances
 
 Open-Vocabulary Model: Pre-annotation with an open-vocabulary model allows for the identification of classes not initially trained, ensuring adaptability to emerging scenarios and classes.
 
-Comprehensive Reporting: The system generates detailed reports, providing medical professionals with valuable insights into patient activities, enabling informed decision-making.
-
-Notification System: Instant notifications keep healthcare providers informed about critical events, facilitating timely response and intervention.
-
-Timeline Logs: Detailed timeline logs offer a chronological overview of events, aiding in post-shift analysis and facilitating communication between healthcare teams.# Table of Contents
+# Table of Contents
 - Installation
 - Usage
 - Data Annotation Process
