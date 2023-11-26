@@ -42,7 +42,13 @@ python main.py
 ```
 
 # Data Annotation Process
-Detail the data annotation pipeline, from pre-annotated images to human annotator approval. Include information on the open-vocabulary model and the rationale behind using it.
+Our data annotation process is split into three parts:
+1. Relevant parts of videos are extracted and converted into images for easier manipulation.
+2. Pre-annotation of images is done using open-vocabulary model
+3. Human annotator approval of pre-annotated images and possible correction of labels
+The first part ensures we only make use of relevant parts of videos, which reduces the amount of data we have to process.
+In the second part we take advantage of large object detection model to speed up the annotation process, making it also easier for annotators.
+The third part ensures that the pre-annotated images are correct and makes corrections where necessary. This process is repeated for all images in the dataset.
 
 # YOLO Integration
 Explain how YOLO is integrated into your system, its role in real-time detection, and any customization options.
