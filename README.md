@@ -79,6 +79,7 @@ To achieve this, we have implemented a notification system that alerts the medic
 Tha can be achieved both  by sending notification to main dashboard or sending notification to mobile device.
 
 # Timeline Logs
+example for ilustration purposes
 
 ![timelog.png](images%2Ftimelog.png)
 
