@@ -14,5 +14,3 @@ start_labelstudio:
 kill_labelstudio:
 	docker-compose down
 
-make train_yolo:
-	python train_yolo.py

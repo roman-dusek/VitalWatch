@@ -28,11 +28,29 @@ This multi-phase approach not only streamlines the annotation workflow but also 
 # YOLO Integration
 The integration of YOLO into the ICU Surveillance Event Detection System plays a pivotal role in achieving real-time and accurate object detection within hospital intensive care units. YOLO is a state-of-the-art deep learning algorithm that excels at detecting and classifying objects in images or video frames swiftly and with high precision.
 
+## YOLO Training Process
+In the root folder, there's a Python notebook named `Train_YOLOv8.ipynb`, which details the YOLO training process.
+
+## Experimental Training of YOLO v8
+For the experimental training phase, YOLO v8 was employed. The training set comprised 400 images, while the validation set included 100 images. The process and outcomes of the training are meticulously documented in the final statistics, as shown in the image.
+![yolo-training-results.png](images%2Fyolo-training-results.png).
+After extensive training, the most effective model weights were identified and are now stored in `weights/best.pt`.
+
+## Further Development and Optimization
+Moving forward, our focus will shift towards further optimization of the YOLO model to enhance its accuracy and efficiency in real-world ICU scenarios. This will include tweaking the model parameters, experimenting with different training datasets, and potentially integrating additional layers or features to improve object detection under various conditions typical of intensive care environments.
+In root folder is located python notebok which name `Train_YOLOv8.ipynb` with describing yolo training process.
+
 # Installation
 
 ```bash
 # after cloning repo, install dependencies
 make install_local
+```
+
+For usage yolo trained model with weight, is need clone repo by this command
+
+```bash
+git lfs clone git@github.com:roman-dusek/VitalWatch.git
 ```
 
 # Usage
@@ -62,8 +80,13 @@ make start_labelstudio
 ```
 
 ```bash
-# finetuned pretrained yolo for ICU use case
-make train_yolo
+# generate images from video in interesting parts, default store folder is myfiles/images
+python video_frame_generator.py --file-name=video.avi --time-window=20 --threshold=700 --save-path=myfiles/images
+```
+
+```bash
+# generate yolo-export training structure which is ready for training. It's locate in myfiles/yolo-export folder
+python generate_yolo_structure --label-file=/myfiles/pre-annotation/labels.csv --detection-file=myfiles/pre-annotation/detections.csv
 ```
 
 # Reports and Notifications
