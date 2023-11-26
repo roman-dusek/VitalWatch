@@ -1,4 +1,3 @@
-Project Title
 # Overview
 The ICU Surveillance Event Detection System is an innovative solution designed to revolutionize patient monitoring within hospital intensive care units. Leveraging state-of-the-art technologies such as YOLO (You Only Look Once) for real-time object detection, this system provides a comprehensive and adaptive approach to annotating and capturing critical events during shifts.
 
