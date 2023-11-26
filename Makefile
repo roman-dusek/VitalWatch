@@ -1,3 +1,6 @@
+install_local:
+	pip install -r requirements.txt
+
 clip_videos:
 	python clip_videos.py
 	echo "Clipping videos has finished"
