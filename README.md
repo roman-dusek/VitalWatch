@@ -70,7 +70,8 @@ The integration of YOLO (You Only Look Once) into the ICU Surveillance Event Det
 
 # Human-in-the-Loop System
 The Human-in-the-Loop (HITL) system integrated into the ICU Surveillance Event Detection plays a crucial role in enhancing the accuracy, reliability, and adaptability of the overall model. By actively involving human annotators in the loop, this system ensures continuous learning and refinement, addressing the inherent challenges of real-world scenarios and maintaining a high standard of precision in event detection.
-![Example of timeline logs]("images/hil.png")
+
+![hil.png](images%2Fhil.png)
 
 # Reports and Notifications
 One of our vision is to provide a real-time monitoring system for ICU patients. This can be easily achieved by uring YOLO to detect the patient's movement and send notification based on some dangerous events being detected to the medical staff.
@@ -78,7 +79,8 @@ To achieve this, we have implemented a notification system that alerts the medic
 Tha can be achieved both  by sending notification to main dashboard or sending notification to mobile device.
 
 # Timeline Logs
-![Example of timeline logs]("images/timelog.png")
+
+![timelog.png](images%2Ftimelog.png)
 
 # Next Steps
 List the next steps for your project, including additional features and improvements.
