@@ -35,16 +35,16 @@ make clip_videos
 # script expects videos to be in myfiles/raw_videos folder
 # script will create myfiles/images folder and put clipped videos there
 # you can also choose export of short clips that can be also anotated for object tracking
->>> Clipping videos has finished.
->>> Clipped 12 videos, in total 8 hours of video.
->>> Prepared 554 interval for pre-annotation, in total 2 hours of video.
+> Clipping videos has finished.
+> Clipped 12 videos, in total 8 hours of video.
+> Prepared 554 interval for pre-annotation, in total 2 hours of video.
 ```
 
 ```bash
 # pre-annotate images using open-vocabulary model
 make run_pre-annotation
->>> Pre-annotation has finished
->>> Recognizing 1873 objects in 554 intervals.
+> Pre-annotation has finished
+> Recognizing 1873 objects in 554 intervals.
 ```
 
 ```bash
