@@ -6,11 +6,11 @@ The ICU Surveillance Event Detection System is an innovative solution designed t
 Leveraging state-of-the-art technologies such as YOLO (You Only Look Once) for real-time object detection, this system provides a comprehensive and adaptive approach to annotating and capturing critical events during shifts.
 
 # Key Features
-**Open-Vocabulary Model**: Pre-annotation with an open-vocabulary model allows for the identification of classes not initially trained, ensuring adaptability to emerging scenarios and classes.
+**Open-Vocabulary Model**: Pre-annotation with an open-vocabulary model allows for the identification of novel, untrained classes. This ensures adaptability to emerging scenarios and classes.
 
-**Human-in-the-Loop System**: The integration of a human-in-the-loop system enhances model accuracy and adaptability through continuous annotating, creating a dynamic and self-improving surveillance system.
+**Human-in-the-Loop System**: The integration of a human-in-the-loop system enhances model accuracy and adaptability through continuous annotating, creating a dynamic and self-improving system.
 
-**Real-time Monitoring**: Utilizing YOLO for object detection, the system ensures immediate and accurate identification of events within ICU rooms.
+**Real-time Monitoring**: Utilizing YOLO for object detection, the system ensures fast and accurate identification of events within ICU rooms.
 
 # Data Annotation Process
 
